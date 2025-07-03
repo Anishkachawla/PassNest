@@ -5,16 +5,19 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Manager from './components/Manager'
 import Passwords from './components/Passwords'
+import { PasswordProvider } from './contexts/PasswordContext';
 
 function App() {
 
   return (
     <>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Manager/>}/>
-        <Route path='/passwords' element={<Passwords/>}/>
-      </Routes>
+      <PasswordProvider>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<Manager/>}/>
+          <Route path='/passwords' element={<Passwords/>}/>
+        </Routes>
+      </PasswordProvider>
     </>
   )
 }
