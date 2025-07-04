@@ -6,7 +6,7 @@ const cors = require("cors");
 
 dotenv.config();
 
-const url = "mongodb://localhost:27017";
+const url = MONGO_URI;
 const client = new MongoClient(url);
 
 const dbName = "passnest";
