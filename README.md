@@ -19,6 +19,5 @@ PassNest is a robust and secure full-stack password manager designed to help you
 - **Node.js**: A JavaScript runtime for building scalable server-side applications.
 - **Express.js**: A fast, unopinionated, minimalist web framework for Node.js.
 - **MongoDB**: A NoSQL document database for storing password entries.
-- **Mongoose**: An ODM (Object Data Modeling) library for MongoDB and Node.js.
 - **bcrypt.js** (or similar): For hashing and salting passwords before storage.
 - **dotenv**: For managing environment variables.
